@@ -2,12 +2,12 @@ name: Automating Weather Data Collection
 
 on:
   schedule:
-    - cron: '0 10 * * *'  # Run daily at 10 AM UTC
-  workflow_dispatch:  # Allows for manual triggering of the workflow
+    - cron: '0 10 * * *'  # This makes it run daily at 10 AM UTC
+  workflow_dispatch:  # This allows me to run it manually for testing purposes
 
 jobs:
   weather_data:
-    runs-on: ubuntu-latest  # Use Ubuntu virtual machine for the job
+    runs-on: ubuntu-latest  # This uses the Ubuntu virtual machine for the job
 
     steps:
     - name: Checkout repository
@@ -15,6 +15,6 @@ jobs:
 
     - name: Make weather.sh executable and run the script
       run: |
-        chmod u+x ./weather.sh  # This makes the script executable
-        ./weather.sh  # This executes the script
+        chmod u+x ./weather.sh  # This makes the script executable (otherwise it would request permissions)
+        ./weather.sh  # This executes the script I created previously
 
