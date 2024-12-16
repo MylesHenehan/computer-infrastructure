@@ -1,0 +1,20 @@
+name: Automating Weather Data Collection
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # Run daily at 10 AM UTC
+  workflow_dispatch:  # Allows for manual triggering of the workflow
+
+jobs:
+  weather_data:
+    runs-on: ubuntu-latest  # Use Ubuntu virtual machine for the job
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3  # This clones my repository into the virtual machine to allow me to work with it.
+
+    - name: Make weather.sh executable and run the script
+      run: |
+        chmod u+x ./weather.sh  # This makes the script executable
+        ./weather.sh  # This executes the script
+
