@@ -70,12 +70,22 @@ The **weather-data.yml** workflow automates the `weather.sh` script. Push change
 ## Example Output
 After running the `weather.sh` script, you will find new weather data files in the `data/weather/` directory with filenames based on the current timestamp, e.g.:
 ```
-data/weather/2024-06-17-14-30-00.txt
+data/weather/20240617_143000.json
 ```
 
 ## Future Improvements
 - Enhance the `weather.sh` script to include error handling for failed downloads.
-- Extend the analysis in `weather.ipynb` to perform data visualization or trend analysis.
+- Extend the analysis in `weather.ipynb` to explore more variables.
+
+## References Used
+
+- Chat GPT. (n.d.). ChatGPT. OpenAI. Available at: https://www.openai.com/chatgpt (Accessed: 20 December 2024).
+- GitHub. (n.d.). GitHub Actions Documentation. Available at: https://docs.github.com/en/actions (Accessed: 16 December 2024).
+- GeeksforGeeks. (n.d.). wget Command in Linux/Unix. Available at: https://www.geeksforgeeks.org/wget-command-in-linux-unix/ (Accessed: 7 November 2024).
+- Met Éireann. (n.d.). Met Éireann - The Irish National Meteorological Service. Available at: https://www.met.ie (Accessed: 15 December 2024).
+- GitHub. (n.d.). Cloning a repository. Available at: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository (Accessed: 12 December 2024).
+- GeeksforGeeks. (n.d.). Shell Scripting - Define #!/bin/bash. Available at: https://www.geeksforgeeks.org/shell-scripting-define-bin-bash/ (Accessed: 7 December 2024).
+- GitHub. (n.d.). Basic writing and formatting syntax. Available at: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax (Accessed: 20 December 2024).
 
 ---
 **Author:** Myles Henehan
