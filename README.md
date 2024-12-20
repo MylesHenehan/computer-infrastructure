@@ -25,7 +25,7 @@ The repository is structured as follows:
    - Ensures unnecessary files are excluded from version control.
 
 2. **`weather.ipynb`**
-   - Jupyter Notebook documenting the workflow and steps involved in the assignment, including:
+   - Jupyter Notebook documenting the steps involved in the assignment, including:
      - Repository structure creation.
      - Use of the `date` command and timestamp formatting.
      - Retrieval of weather data from Met Éireann using `wget`.
@@ -46,33 +46,11 @@ The repository is structured as follows:
 5. **`.github/workflows/` Directory**
    - Includes the **`weather-data.yml`** file that defines a GitHub Actions workflow. This workflow automates the execution of the `weather.sh` script.
 
-## Steps Taken in the Assignment
-
-The following tasks were completed as part of the assignment:
-
-1. **Repository Structure Creation**
-   - Organized files and directories to follow a clean and logical structure.
-
-2. **Using the `date` Command**
-   - Utilized the `date` command to generate formatted timestamps.
-
-3. **Downloading Weather Data**
-   - Used `wget` to download weather data for the current day from Met Éireann and save it using the timestamp as the filename.
-
-4. **Automating with a Shell Script**
-   - Wrote the `weather.sh` script to automate data retrieval and save it to the `data/weather` directory.
-
-5. **Automating with GitHub Actions**
-   - Set up a GitHub Actions workflow to run the `weather.sh` script automatically.
-
-6. **Analyzing Weather Data**
-   - Read in one of the downloaded weather data files and performed basic descriptive analysis of the dataset.
-
 ## How to Use the Project
 
 ### Prerequisites
-- Ensure you have `wget` installed on your system.
-- GitHub Actions will require repository permissions to run workflows.
+- Ensure you have `wget` and `bash` installed on your system.
+- Have Python installed to run the Jupyter notebook.
 
 ### Running the `weather.sh` Script
 1. Clone the repository:
@@ -99,12 +77,9 @@ data/weather/2024-06-17-14-30-00.txt
 - Enhance the `weather.sh` script to include error handling for failed downloads.
 - Extend the analysis in `weather.ipynb` to perform data visualization or trend analysis.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ---
-**Author:** [Your Name]  
+**Author:** Myles Henehan
 **Module:** Computer Infrastructure  
-**Institution:** ATU
+**Institution:** Atlantic Technological University
 
 
